@@ -1,0 +1,16 @@
+@import 'utils/variables';
+@import 'components/type';
+@import '../../node_modules/modern-normalize/modern-normalize';
+
+
+body{
+    background-color: #ffdab9;
+}
+.header{
+    background-color: #f08080;
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
