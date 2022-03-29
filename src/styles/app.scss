@@ -1,6 +1,7 @@
 @import 'utils/variables';
 @import 'components/type';
 @import '../../node_modules/modern-normalize/modern-normalize';
+@import 'experimentation/graph';
 
 
 body{
@@ -14,3 +15,302 @@ body{
     top: 0;
     z-index: 999;
 }
+
+@font-face {
+    font-family: "Catalina Rayden"; 
+    src: url("Catalina\ Rayden.ttf");
+}
+@font-face {
+    font-family: "CaviarDreams";
+    src: url("CaviarDreams.ttf");
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body, body *{
+    margin: 0;
+    padding: 0;
+}
+
+body[data-theme="clair"] .logo{
+    --logo: url(../data/assets/images/lune-test.png) no-repeat;
+}
+body[data-theme="sombre"] .logo{
+    --logo: url(../data/assets/images/lune-test3.png) no-repeat;
+}
+
+.title__big{
+    font-size: 76px;
+    font-family: "Catalina Rayden";
+    max-width: 460px;
+    font-weight: normal;
+    line-height: 91.97px;
+    text-align: center;
+}
+
+li{
+    list-style-type: none;
+}
+
+.title__big, .circle, .reponse{
+    position: absolute;
+}
+
+.title__big, .circle{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title__big{
+    transform: translateX(-50%) translateY(275px) translateY(-50%);
+}
+
+.circle{
+    border: 1px solid black;
+    width: 550px;
+    height: 550px;
+    border-radius: 2000px;
+}
+
+.reponse h2{
+    font-size: 36px;
+    font-family: "CaviarDreams";
+    font-weight: normal;
+    max-width: 200px;
+}
+
+.reponse{ 
+    background-repeat: no-repeat;
+    width: 554px;
+    height: 325px;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.reponse1{
+    top: 216px;
+    transform: translateX(-50%);
+    background-image: url(nuage1.png);
+    background-size: 110%;
+    background-position: center;
+}
+.reponse2{
+    top: 620px;
+    transform: translateX(-50%) translateX(-404px);
+    background-image: url(nuage2.png);
+    background-size: 105%;
+    background-position: center;
+}
+.reponse3{
+    top: 445px;
+    transform: translateX(-50%) translateX(456px);
+    background-image: url(nuage3.png);
+    background-size: 100%;
+    background-position: bottom;
+}
+.reponse4{
+    top: 804px;
+    transform: translateX(-50%) translateX(-50px);
+    background-image: url(nuage4.png);
+    background-size: 120%;
+    background-position: 60% 70%;
+}
+
+.reponse1:hover{
+    cursor: pointer;
+}
+.reponse2:hover{
+    cursor: pointer;
+}
+.reponse3:hover{
+    cursor: pointer;
+}
+.reponse4:hover{
+    cursor: pointer;
+}
+.burger{
+    background-image: url(../data/assets/images/burgermenu.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    width: 100px;
+    height: 60px;
+    background-position: center;
+    position: absolute;
+    top: 20px;
+    right: 0%;
+    z-index: 20;
+    background-color: transparent;
+    border: none
+}
+.nav{
+    position: fixed;
+    display: none;
+}
+
+.logo {
+  height: 100px;
+  width: 100px; 
+}
+
+.burger__ul{
+  margin: auto;
+}
+
+body[data-menu] .nav{
+  display: flex;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transform: translateY(-100vh);
+  z-index: 19;
+  animation: openburger 0.2s ease-in forwards;
+}
+body[data-menu] .nav li{
+  width: fit-content;
+  margin: 20px 0;
+}
+
+body[data-menu] .burger{
+  position: fixed;
+}
+
+/*  DIV TRANSPARENT  */
+
+
+
+/*  FIN DIV TRANSPARENT  */
+
+
+
+@keyframes openburger{
+  to{
+      transform: translateY(0);
+  }
+}
+
+.grid{
+  display: grid;
+	grid-template-columns: 3fr 8fr 4fr ;
+	column-gap: 16px;
+	padding: 0 19px;
+	padding-left: calc(25px + 19px);
+}
+.grid-test{
+  display: grid;
+	grid-template-columns: 4fr ;
+	padding-left: calc(25px + 19px);
+}
+.mgrid-start1{
+  grid-column-start: 1;
+}
+
+.mgrid-start2{
+  grid-column-start: 2;
+}
+.mgrid-start3{
+  grid-column-start: 3;
+}
+
+.mgrid-start4{
+  grid-column-start: 4;
+}
+
+/* TYPO */
+.title--big{
+  font-size: 97px;
+  font-family: "Monea Alegante";
+  /*text-align: center;*/
+}
+.title__big, h2, h3{
+  font-family: "Monea Alegante";
+}
+.text-center{
+  text-align: center;
+}
+.title--medium{
+  font-size: 69px;
+}
+.title--small{
+  font-size: 49px;
+}
+.title--very--small{
+  font-size: 35px;
+}
+p{
+  font-size: 25px;
+  font-family: "CaviarDreams"; 
+}
+.legende{
+  font-size: 18px;
+}
+a{
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+header, footer{
+    width: 100vw;
+}
+header{
+    height: 370px;
+}
+footer{
+    height: 100px;
+    margin-top: 1100px;
+}
+.footer__border{
+    background: linear-gradient(to right, hsla(0, 79%, 72%, 1), hsla(8, 100%, 95%, 0.83));
+    width: 100vw;
+    height: 5px;
+}
+
+.circle{
+    display: none;
+}
+/* FOOTER */
+.footer__list {
+	list-style: none;
+	margin: 0 0 30px 0;
+	padding: 0px;
+  text-align: right;
+}
+.footer__item {
+	border: none;
+	padding: 0 15px;
+  margin-top: 20px;
+  
+}
+.footer_border{
+  background: linear-gradient(to right, hsla(0, 79%, 72%, 1), hsla(8, 100%, 95%, 0.83));
+  height: 5px;
+}
+.reseaux_element{
+    position: relative;
+    overflow: hidden;
+    border-right: 1px solid black;
+}
+
+.section--footer {
+  padding-top: 5px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: flex-end;
+  text-align: end;
+}
+.section--main {
+  display: flex;
+  
+}
+.dwt{
+  position: relative;
+  top: 20px;
+  left: -150px;
+}
+/* FIN FOOTER */

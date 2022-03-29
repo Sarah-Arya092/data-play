@@ -1,0 +1,15 @@
+.questions{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 300;
+    background-color: #fff7f0;
+    opacity: 85%;
+    /* display: none; */
+}
+
+.piechart{
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #DF9696;
+}
