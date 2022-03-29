@@ -1,15 +1,26 @@
-.questions{
+.questions__blur{
     width: 100vw;
     height: 100vh;
     position: absolute;
     z-index: 300;
     background-color: #fff7f0;
     opacity: 85%;
-    /* display: none; */
+    left: 0;
+    top: 75px;
+}
+
+.questions__graphique{
+    position: absolute;
+    z-index: 500;
 }
 
 .piechart{
     fill-rule: evenodd;
     clip-rule: evenodd;
     fill: #DF9696;
+    opacity: 100%;
+}
+
+.questions{
+    display: none;
 }

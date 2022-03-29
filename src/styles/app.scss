@@ -3,10 +3,6 @@
 @import '../../node_modules/modern-normalize/modern-normalize';
 @import 'experimentation/graph';
 
-
-body{
-    background-color: #ffdab9;
-}
 .header{
     background-color: #f08080;
     width: 100%;
@@ -17,12 +13,12 @@ body{
 }
 
 @font-face {
-    font-family: "Catalina Rayden"; 
-    src: url("Catalina\ Rayden.ttf");
+    font-family: "Monea Alegante"; 
+    src: url("../fonts/Monea\ Alegante.otf");
 }
 @font-face {
     font-family: "CaviarDreams";
-    src: url("CaviarDreams.ttf");
+    src: url("../fonts/CaviarDreams.ttf");
 }
 
 html{
@@ -41,24 +37,31 @@ body[data-theme="sombre"] .logo{
     --logo: url(../data/assets/images/lune-test3.png) no-repeat;
 }
 
+body, .title__medium{
+  font-family: "CaviarDreams";
+}
+
 .title__big{
     font-size: 76px;
-    font-family: "Catalina Rayden";
+    font-family: "Monea Alegante";
     max-width: 460px;
     font-weight: normal;
     line-height: 91.97px;
     text-align: center;
+    position: absolute;
+    left: 0;
+    top: 300px;
 }
 
 li{
     list-style-type: none;
 }
 
-.title__big, .circle, .reponse{
+.title__big, .reponse{
     position: absolute;
 }
 
-.title__big, .circle{
+.title__big{
     left: 50%;
     transform: translateX(-50%);
 }
@@ -67,18 +70,10 @@ li{
     transform: translateX(-50%) translateY(275px) translateY(-50%);
 }
 
-.circle{
-    border: 1px solid black;
-    width: 550px;
-    height: 550px;
-    border-radius: 2000px;
-}
-
 .reponse h2{
     font-size: 36px;
-    font-family: "CaviarDreams";
     font-weight: normal;
-    max-width: 200px;
+    max-width: 220px;
 }
 
 .reponse{ 
@@ -93,30 +88,30 @@ li{
 
 
 .reponse1{
-    top: 216px;
+    top: 70px;
     transform: translateX(-50%);
-    background-image: url(nuage1.png);
+    background-image: url(../assets/images/nuage_rose1.png);
     background-size: 110%;
     background-position: center;
 }
 .reponse2{
-    top: 620px;
-    transform: translateX(-50%) translateX(-404px);
-    background-image: url(nuage2.png);
+    top: 480px;
+    transform: translateX(-50%) translateX(-400px);
+    background-image: url(../assets/images/nuage_rose3.png);
     background-size: 105%;
     background-position: center;
 }
 .reponse3{
-    top: 445px;
-    transform: translateX(-50%) translateX(456px);
-    background-image: url(nuage3.png);
+    top: 310px;
+    transform: translateX(-50%) translateX(380px);
+    background-image: url(../assets/images/nuage_rose4.png);
     background-size: 100%;
     background-position: bottom;
 }
 .reponse4{
-    top: 804px;
-    transform: translateX(-50%) translateX(-50px);
-    background-image: url(nuage4.png);
+    top: 760px;
+    transform: translateX(-50%) translateX(-20px);
+    background-image: url(../assets/images/nuage_rose5.png);
     background-size: 120%;
     background-position: 60% 70%;
 }
@@ -271,9 +266,6 @@ footer{
     height: 5px;
 }
 
-.circle{
-    display: none;
-}
 /* FOOTER */
 .footer__list {
 	list-style: none;
