@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data-Play | Landing page | Sarah Pestiaux | HEAJ - 2021-2022</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="description" content="Site présentant notre projet Data-Play sur le thème du sommeil">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@sarah_pestiaux">
+    <meta name="twitter:creator" content="@sarah_pestiaux">
+    <meta name="twitter:title" content="Data-Play | Landing page | Sarah Pestiaux | HEAJ - 2021-2022">
+    <meta name="twitter:description" content="Site présentant notre projet Data-Play sur le thème du sommeil">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image" content="http://www.example.com/assets/images/image.png">
+
+    <!-- Open Graph data -->
+    <meta property="og:site_name" content="Data-Play | Landing page | Sarah Pestiaux | HEAJ - 2021-2022"/>
+    <meta property="og:title" content="Data-Play"/>
+    <meta property="og:description" content="Site présentant notre projet Data-Play sur le thème du sommeil"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://www.example.com/"/>
+    <meta property="og:image" content="http://example.com/assets/images/image.jpg"/>
+    <meta property="og:image:width" content="1800">
+    <meta property="og:image:height" content="945">
+
+    <!-- Favicon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles/app.css">
+    <script src="scripts/app.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo"><a href="assets/images/test-logo9.png"></a></h1>
+    </header>
+    <main>
+
+        <!-- au survol de la question
+        je récupère la classe de l'element (questions--1, questions--2)
+    j'ajoute sur div.questions la questions à afficher
+
+ div.questions.questions--2 .questions__el:nth_child(2) 
+
+-->
+
+        <div class="questions">
+            
+            <ul class="questions__liste">
+                <li class="questions__el">Quelle option dort le moins&#8239;?</li>
+                <li class="questions__el">Quelle option dort le plus&#8239;?</li>
+                <li class="questions__el">Pensez-vous dormir assez&#8239;?</li>
+                <li class="questions__el">Combien d'heures dors-tu par jour&#8239;?</li>
+            </ul>
+
+            <?xml version="1.0" encoding="utf-8"?>
+            <svg class="questions__graphique" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 608 595" style="enable-background:new 0 0 608 595;" xml:space="preserve">
+
+                <g id="cercle">
+                    <circle class="piechart" cx="315" cy="303.2" r="269"/>
+                </g>
+            </svg>
+
+            <button class="questions__close">Fermer</button>
+
+        </div>
+
+
+        <div class="circle"></div>
+        <h2 class="title title__big">Le sommeil à l'HEAJ</h2>
+        <ul>
+            <li class="reponse reponse1"><h2>Quelle option dort le moins&#8239;?</h2></li>
+            <li class="reponse reponse2"><h2>Quelle option dort le plus&#8239;?</h2></li>
+            <li class="reponse reponse3"><h2>Pensez-vous dormir assez&#8239;?</h2></li>
+            <li class="reponse reponse4"><h2>Combien d'heures dors-tu par jour&#8239;?</h2></li>
+        </ul>
+    </main>
+    <footer class="section section--footer">
+        <div class="footer__border"></div>
+        <ul class="footer__list">
+            <li class="footer__item"><a href="index.html"><span class="actif">Hannah Mathot</span></a></li>
+            <li class="footer__item"><a href="ui-kit.html">Sarah Pestiaux</a></li>
+            <li class="footer__item"><a href="https://maxence-wyame.be/projets/">Maxence Wyame</a></li>
+            <li class="footer__item"><a href="ui-kit.html">Maïlys Colasse</a></li>
+          </ul>
+    </footer>
+    
+  </body>
+</html>
