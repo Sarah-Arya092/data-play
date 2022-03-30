@@ -314,3 +314,124 @@ footer{
   left: -150px;
 }
 /* FIN FOOTER */
+/* Test.css */
+body, body *{
+  margin: 0;
+  padding: 0;
+}
+.test{
+  max-width: 400px;
+}
+h2{
+  font-size: 32px;
+  max-width: 460px;
+  font-weight: normal;
+  line-height: 91.97px;
+}
+
+li{
+  list-style-type: none;
+}
+
+.question, footer{
+  position: relative;
+}
+
+.question h3{
+  font-size: 20px;
+  font-family: "CaviarDreams";
+  font-weight: normal;
+  max-width: 180px;
+  max-height: 550px;
+  padding: 50px;
+}
+
+.question{
+  background-repeat: no-repeat;
+  padding: 50px;
+}
+
+.question1{
+  transform: translateX(100px) translateY(180px);
+  background-position: center center;
+  background-size: 75%;
+}
+.question2{
+  transform: translateX(200px) translateY(40px);
+  background-position: center center;
+  background-size: 75%;
+}
+.question3{
+  transform: translateX(-40px) translateY(-150px);
+  background-position: center center;
+  background-size: 85%;
+
+}
+.question4{
+  transform: translateX(100px) translateY(-300px);
+  background-position: center center;
+  background-size: 75%;
+}
+.selec-p{
+  max-width: 400px;
+}
+.blabla{
+  width: 1850px;
+  height: 800px;
+  transform: translateX(-750px) translateY(-100px);
+}
+header{
+  height: 250px;
+}
+
+@media (min-width: 768px){
+  .pos-desktop{
+    position: relative;
+    transform: translateY(450px) translateX(450px);
+    width: 250px;
+}
+.pres-width{
+    width: 650px;
+}
+.selec-p{
+    max-width: 450px;
+  }
+.blabla{
+    width: 1050px;
+    height: 700px;
+    transform: translateX(150px) translateY(-500px);
+  }
+}
+@media (min-width: 1046px){
+    
+  .pos-desktop{
+      position: relative;
+      transform: translateY(400px) translateX(550px);
+      width: 508px;
+  }
+  .blabla{
+      width: 1250px;
+      height: 900px;
+      transform: translateX(150px) translateY(-600px);
+    }
+}
+@media (min-width: 1200px){
+  
+  .pos-desktop{
+      position: relative;
+      transform: translateY(400px) translateX(900px);
+      width: 508px;
+  }
+  .test{
+      transform: translateX(250px);
+  }
+  .selec-p{
+      max-width: 450px;
+      transform: translateX(250px);
+    }
+  .blabla{
+      width: 1050px;
+      height: 700px;
+      transform: translateX(550px) translateY(-500px);
+    }
+}
