@@ -1,17 +1,30 @@
-.questions__blur{
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    z-index: 300;
-    background-color: #fff7f0;
-    opacity: 85%;
-    left: 0;
-    top: 75px;
-}
-
-.questions__graphique{
-    position: absolute;
-    z-index: 500;
+.questions{
+    //display: none;
+    &__blur{
+        width: 100vw;
+        height: 210vh;
+        position: absolute;
+        z-index: 300;
+        background-color: #fff7f0;
+        opacity: 85%;
+        left: 0;
+        top: 75px;
+    }
+    &__graphique{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 500;
+    }
+    &__close{
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+        z-index: 600;
+    }
+    &--none{
+        display: none;
+    }
 }
 
 .piechart{
@@ -19,8 +32,4 @@
     clip-rule: evenodd;
     fill: #DF9696;
     opacity: 100%;
-}
-
-.questions{
-    display: none;
 }

@@ -3,15 +3,6 @@
 @import '../../node_modules/modern-normalize/modern-normalize';
 @import 'experimentation/graph';
 
-.header{
-    background-color: #f08080;
-    width: 100%;
-    height: 75px;
-    position: fixed;
-    top: 0;
-    z-index: 999;
-}
-
 @font-face {
     font-family: "Monea Alegante"; 
     src: url("../fonts/Monea\ Alegante.otf");
@@ -28,6 +19,15 @@ html{
 body, body *{
     margin: 0;
     padding: 0;
+}
+
+.header{
+  background-color: #f08080;
+  width: 100%;
+  height: 75px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
 }
 
 body[data-theme="clair"] .logo{
@@ -84,50 +84,41 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
+    &1{
+      top: 70px;
+      transform: translateX(-50%);
+      background-image: url(../assets/images/nuage_rose1.png);
+      background-size: 110%;
+      background-position: center;
+    }
+    &2{
+      top: 480px;
+      transform: translateX(-50%) translateX(-400px);
+      background-image: url(../assets/images/nuage_rose3.png);
+      background-size: 105%;
+      background-position: center;
+    }
+    &3{
+      top: 310px;
+      transform: translateX(-50%) translateX(380px);
+      background-image: url(../assets/images/nuage_rose4.png);
+      background-size: 100%;
+      background-position: center;
+    }
+    &4{
+      top: 760px;
+      transform: translateX(-50%) translateX(-20px);
+      background-image: url(../assets/images/nuage_rose5.png);
+      background-size: 120%;
+      background-position: 60% 70%;
+    }
 }
 
 
-.reponse1{
-    top: 70px;
-    transform: translateX(-50%);
-    background-image: url(../assets/images/nuage_rose1.png);
-    background-size: 110%;
-    background-position: center;
-}
-.reponse2{
-    top: 480px;
-    transform: translateX(-50%) translateX(-400px);
-    background-image: url(../assets/images/nuage_rose3.png);
-    background-size: 105%;
-    background-position: center;
-}
-.reponse3{
-    top: 310px;
-    transform: translateX(-50%) translateX(380px);
-    background-image: url(../assets/images/nuage_rose4.png);
-    background-size: 100%;
-    background-position: bottom;
-}
-.reponse4{
-    top: 760px;
-    transform: translateX(-50%) translateX(-20px);
-    background-image: url(../assets/images/nuage_rose5.png);
-    background-size: 120%;
-    background-position: 60% 70%;
+button:hover, .reponse1:hover, .reponse2:hover, .reponse3:hover, .reponse4:hover{
+    cursor: pointer;
 }
 
-.reponse1:hover{
-    cursor: pointer;
-}
-.reponse2:hover{
-    cursor: pointer;
-}
-.reponse3:hover{
-    cursor: pointer;
-}
-.reponse4:hover{
-    cursor: pointer;
-}
 .burger{
     background-image: url(../data/assets/images/burgermenu.png);
     background-repeat: no-repeat;
@@ -264,41 +255,24 @@ footer{
     background: linear-gradient(to right, hsla(0, 79%, 72%, 1), hsla(8, 100%, 95%, 0.83));
     width: 100vw;
     height: 5px;
+    z-index: 5;
 }
-
-/* FOOTER */
 .footer__list {
 	list-style: none;
-	margin: 0 0 30px 0;
-	padding: 0px;
   text-align: right;
+  z-index: 4;
 }
 .footer__item {
 	border: none;
-	padding: 0 15px;
-  margin-top: 20px;
-  
-}
-.footer_border{
-  background: linear-gradient(to right, hsla(0, 79%, 72%, 1), hsla(8, 100%, 95%, 0.83));
-  height: 5px;
-}
-.reseaux_element{
-    position: relative;
-    overflow: hidden;
-    border-right: 1px solid black;
+	padding: 10px 30px;
 }
 
 .section--footer {
   padding-top: 5px;
   padding-bottom: 30px;
-  display: flex;
-  justify-content: flex-end;
-  text-align: end;
 }
 .section--main {
   display: flex;
-  
 }
 .dwt{
   position: relative;
