@@ -3,6 +3,15 @@
 @import '../../node_modules/modern-normalize/modern-normalize';
 @import 'experimentation/graph';
 
+@font-face {
+  font-family: "Catalina Rayden"; 
+  src: url("Catalina\ Rayden.ttf");
+}
+@font-face {
+  font-family: "CaviarDreams";
+  src: url("CaviarDreams.ttf");
+}
+
 /* style.css */
 :root{
   --color-bg: #fff4f4;
@@ -116,6 +125,115 @@ body[data-theme="sombre"] .blabla{
   background-image: url(assets/images/Plan\ de\ travail\ 2.svg);
 }
 /* FIn style.css */
+
+/* animation.css */
+[color-theme="clair"]{
+  background-color: #FFF4F4;
+  }
+
+[color-theme="sombre"]{
+  background-color: #1A294E;
+}
+[color-theme="clair"] .box1{
+  background-image: url(assets/images/clair-astuce/Group\ 1.svg)
+}
+[color-theme="sombre"] .box1{
+  background-image: url(assets/images/sombre-astuce/Group\ 1.svg);
+}
+
+[color-theme="clair"] .box2{
+  background-image: url(assets/images/clair-astuce/Group\ 2.svg)
+}
+[color-theme="sombre"] .box2{
+  background-image: url(assets/images/sombre-astuce/Group\ 2.svg);
+}
+
+[color-theme="clair"] .box3{
+  background-image: url(assets/images/clair-astuce/Group\ 3.svg)
+}
+[color-theme="sombre"] .box3{
+  background-image: url(assets/images/sombre-astuce/Group\ 3.svg);
+}
+
+[color-theme="clair"] .box4{
+  background-image: url(assets/images/clair-astuce/Group\ 4.svg);
+  background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center center;
+}
+[color-theme="sombre"] .box4{
+  background-image: url(assets/images/sombre-astuce/Group\ 4.svg);
+}
+
+[color-theme="clair"] .box5{
+  background-image: url(/assets/images/clair-astuce/Group\ 5.svg)
+}
+[color-theme="sombre"] .box5{
+  background-image: url(assets/images/sombre-astuce/Group\ 5.svg)
+}
+
+[color-theme="clair"] .box6{
+  background-image: url(/assets/images/clair-astuce/Group\ 1.svg)
+}
+[color-theme="sombre"] .box6{
+  background-image: url(assets/images/sombre-astuce/Group\ 1.svg);
+}
+
+body, body *{
+    margin: 0;
+    padding: 0;
+  }
+  .box{
+    width: 300px;
+    height: 300px;
+    margin-top: 150px;
+    margin-bottom: 350px;
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    }
+    .box1{
+    transform: translateX(-150px);
+    background-image: url(assets/images/nuage3.png);
+    }
+    .box2{
+        position: absolute;
+        right: 0;
+        transform: translateX(350px);
+        background-image: url(assets/images/Group\ 1.svg);
+    }
+    .box3{
+        transform: translateX(-150px) translateY(300%);
+    }
+    .box4{
+        position: absolute;
+        right: 0;
+        transform: translateX(350px) translateY(350%);
+    }
+    .box5{
+        transform: translateX(-150px) translateY(670%);
+        }
+
+    .title-astuce{
+      margin-bottom: 45px;
+      font-size: 32px;
+    }
+    .p-astuce{
+      font-size: 24px;
+    }
+  .section{
+      height: 200vh;
+    }
+    .img-astuce{
+      height: 400px;
+      width: 400px;
+    }
+    .astuce4, .astuce3{
+    width: 300px;
+    }
+/* fin animation.css */
+
 body{
     background-color: #ffdab9;
     overflow-x: hidden;
@@ -129,14 +247,6 @@ body{
     z-index: 999;
 }
 
-@font-face {
-    font-family: "Catalina Rayden"; 
-    src: url("Catalina\ Rayden.ttf");
-}
-@font-face {
-    font-family: "CaviarDreams";
-    src: url("CaviarDreams.ttf");
-}
 
 html{
     overflow-x: hidden;
@@ -555,6 +665,46 @@ header{
 .json--margin{
   margin-left: 80px;
 }
+
+/* animation.css*/
+.box{
+  width: 500px;
+  height: 300px;
+  margin-top: 300px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  }
+  .box1{
+  transform: translateX(-500px);
+  }
+  .box2{
+  position: absolute;
+  right: 0;
+  }
+  .box3{
+    transform: translateX(-550px) translateY(350%);
+    }
+
+.box4{
+  position: absolute;
+  right: 0;
+  transform: translateX(500px) translateY(350%);
+}
+.box5{
+  transform: translateY(700%);
+}
+
+.title-astuce{
+  margin-bottom: 45px;
+  font-size: 40px;
+}
+.p-astuce{
+  font-size: 25px;
+}
+.astuce4, .astuce3{
+  width: 400px;
+  }
+
 @media (min-width: 1046px){
     
   .pos-desktop{
