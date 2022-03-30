@@ -10,13 +10,13 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@sarah_pestiaux">
     <meta name="twitter:creator" content="@sarah_pestiaux">
-    <meta name="twitter:title" content="Data-Play | Landing page | Sarah Pestiaux | HEAJ - 2021-2022">
+    <meta name="twitter:title" content="Data-Play | Landing page | Big mac gold | HEAJ - 2021-2022">
     <meta name="twitter:description" content="Site présentant notre projet Data-Play sur le thème du sommeil">
     <!-- Twitter summary card with large image must be at least 280x150px -->
     <meta name="twitter:image" content="http://www.example.com/assets/images/image.png">
 
     <!-- Open Graph data -->
-    <meta property="og:site_name" content="Data-Play | Landing page | Sarah Pestiaux | HEAJ - 2021-2022"/>
+    <meta property="og:site_name" content="Data-Play | Landing page | Big mac gold | HEAJ - 2021-2022"/>
     <meta property="og:title" content="Data-Play"/>
     <meta property="og:description" content="Site présentant notre projet Data-Play sur le thème du sommeil"/>
     <meta property="og:type" content="website"/>
@@ -28,23 +28,78 @@
     <!-- Favicon -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="styles/app.css">
-    <script src="scripts/app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test.css">
+    <script src="script/main.js" defer></script>
   </head>
   <body>
-    <header class="header">
-      <h1 class="logo"><a href="assets/images/test-logo9.png"></a></h1>
-    </header>
+    <div class="contenair">
+    <header>
+      <a href="index.html" ><img class="logo" src="assets/images/lune-test.png" alt="original logo" /></a>
+      <button title="Ouvrir/Fermer le menu" class="burger"></button>
+      <nav class="nav">
+          <ul class="burger__ul">
+            <li><a href="landing.html" title="Aller à l'accueil">Accueil</a></li>
+            <li><a href="landing.html" title="Voir l'étape 1'">Landing page</a></li>
+            <li><a href="json.html" title="Voir l'étape 1'">Json page</a></li>
+          </ul>
+      </nav>
+      <div class="bouton">
+        <button class=" bouton--sombre js-theme-darkmode"></button>
+      </div>
+      
+  </header>
+</div>
+<div class="contenair ">
     <main>
-      <section></section>
-      <section></section>
-      <p>
-        dd
-      </p>
-      <section></section>
-      <section></section>
-    </main>
+      <section class="">
+        <div class="grid">
+          <h1 class="title--big mgrid-start1 tgrid-start2 json--margin">DataSleep</h1>
+          <p class="mgrid-start1 margin-100 tgrid-start2 json--margin pres-width">Bienvenue, sur notre DataPlay dédié au sommeil, vous allez pouvoir découvrir le sommeil des options des différentes options de l'Heaj ainsi que nos professeurs.</p>
+          <a class="mgrid-start1 margin-50 tgrid-start2 json--margin" href="json.html"><button title="bouton lets'go" class="go ">Découvrer ça ici</button></a>
+          <h2 class="mgrid-start1 margin-top pos-desktop">Le sommeil à l'HEAJ</h2>
+          <p class="mgrid-start1 pos-desktop">Vous pourez découvrir ses données au travers de ce petit shcéma animé.</p>
+            
+        </div>
+      </section>
+      
+      
+            
+          
+        <section class="test margin-70">
+          <ul>
+              <li class="question question1"><h3>Quelle option dort le moins&#8239;?</h3></li>
+              <li class="question question2"><h3>Quelle option dort le plus&#8239;?</h3></li>
+              <li class="question question3"><h3>Pensez-vous dormir assez&#8239;?</h3></li>
+              <li class="question question4"><h3>Combien d'heures de sommeil dors-tu par jour&#8239;?</h3></li>
+          </ul>
+        </section>
 
+      
+
+      <section class="astuce-nuage">
+        <div class="last grid-test margin-top margin-70">
+          <h2 class="mgrid-start1 selec-p">Astuces</h2>
+          <p class="mgrid-start1 pres-width selec-p">Nous vous avons aussi consacré une partie exclusive avec des astuces et conseil pour mieux dormir.</p>
+          <img class="blabla" src="assets/images/Plan de travail 1.svg">
+        </div>
+      </section>
+      
     
+    
+    </main>
+  </div>
+  <div class="contenair">
+    <div class="footer_border"></div>
+    <footer class="section section--footer ">
+      <a href="index.html" class="dwt">Dwt@2022</a>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="index.html"><span class="actif">Hannah Mathot</span></a></li>
+        <li class="footer__item"><a href="ui-kit.html">Sarah Pestiaux</a></li>
+        <li class="footer__item"><a href="https://maxence-wyame.be/projets/">Maxence Wyame</a></li>
+        <li class="footer__item"><a href="ui-kit.html">Maïlys Colasse</a></li>
+      </ul>
+    </footer>
+  </div>
   </body>
 </html>
